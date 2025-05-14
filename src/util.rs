@@ -5,8 +5,6 @@ pub enum Type {
 }
 
 pub fn get_type_from_path(path: &str) -> Option<Type> {
-    println!("{}", path);
-
     let path = std::path::Path::new(path);
 
     match path.extension() {
